@@ -8,14 +8,12 @@
 max_number = 1000
 sum = 0
 number = 1
-i = 1
 
-while i < max_number
+while number < max_number
   if number % 3 == 0 || number % 5 == 0
     sum += number
   end
   number += 1
-  i+= 1
 end
 
 puts sum
