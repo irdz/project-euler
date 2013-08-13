@@ -11,13 +11,23 @@
 
 
 def sumSquare(highest_number)
-  i = 0
-  until i = highest_number
-    sum += highest_number**2
-    i += 1
-    puts sum
+  sum = 0
+  number = 0
+  while number <= highest_number
+    sum += number**2
+    number += 1
   end
   return sum
 end
 
-puts sumSquare(10)
+def squareOfSum(highest_number)
+  sum = 0
+  number = 0
+  while number <= highest_number
+    sum += number
+    number += 1
+  end
+  return sum**2
+end
+
+puts squareOfSum(10) - sumSquare(10)
