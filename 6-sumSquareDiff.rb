@@ -30,4 +30,4 @@ def squareOfSum(highest_number)
   return sum**2
 end
 
-puts squareOfSum(10) - sumSquare(10)
+puts squareOfSum(100) - sumSquare(100)
