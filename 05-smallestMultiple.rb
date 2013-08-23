@@ -5,12 +5,53 @@
 number = 10
 divisor = 10
 upper_limit = 10
+success = false
 
-if number % divisor !== 0
-  puts number
-  divisor = upper_limit + upper_limit
+def testMod(number, divisor)
+  if number % divisor == 0
+    return true
+  else
+    return false
+  end
+end
+
+def testModLimit(number, divisor, upper_limit)
+  while divisor > 0
+    if number % divisor == 0
+      success = true
+
 end
 
 
 
+
+while success == false
+
+end
+
+
+# while success == false
+#   if testMod(number, divisor) == true
+#     while divisor >  0
+#       testMod(number, divisor)
+#       divisor -= 1
+#       puts divisor
+#     end
+#   else
+#     divisor = upper_limit
+#     number += divisor
+#   end
+#   success = true
+# end
+
 puts number
+
+# while !false
+#   if testMod(number, divisor) == false
+#     number += divisor
+#   else
+#     divisor -= 1
+#   end
+#   testMod(number, divisor)
+#   testMod(number, divisor - 1)
+# end
