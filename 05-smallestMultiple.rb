@@ -2,56 +2,17 @@
 
 # What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
-number = 10
-divisor = 10
-upper_limit = 10
-success = false
+number = 20
+index = 20
+original_index = 20
 
-def testMod(number, divisor)
-  if number % divisor == 0
-    return true
+while index > 0
+  if number % index == 0
+    index -= 1
   else
-    return false
+    number += original_index
+    index = original_index
   end
 end
 
-def testModLimit(number, divisor, upper_limit)
-  while divisor > 0
-    if number % divisor == 0
-      success = true
-
-end
-
-
-
-
-while success == false
-
-end
-
-
-# while success == false
-#   if testMod(number, divisor) == true
-#     while divisor >  0
-#       testMod(number, divisor)
-#       divisor -= 1
-#       puts divisor
-#     end
-#   else
-#     divisor = upper_limit
-#     number += divisor
-#   end
-#   success = true
-# end
-
 puts number
-
-# while !false
-#   if testMod(number, divisor) == false
-#     number += divisor
-#   else
-#     divisor -= 1
-#   end
-#   testMod(number, divisor)
-#   testMod(number, divisor - 1)
-# end
