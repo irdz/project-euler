@@ -7,6 +7,7 @@ index = 20
 original_index = 20
 
 while index > 0
+  # puts "Number is #{number}"
   if number % index == 0
     index -= 1
   else
