@@ -6,3 +6,14 @@ palindromeLength = 2
 number = 1
 product = 1
 
+def largestPalindromeNumber(length)
+  digit = ""
+  while length > 0
+    digit += "9"
+    length -= 1
+  end
+  return digit.to_i
+end
+
+
+
