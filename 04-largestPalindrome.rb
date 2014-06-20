@@ -15,5 +15,17 @@ def largestPalindromeNumber(length)
   return digit.to_i
 end
 
+def isPalindrome?(number)
+  number = number.to_s
 
+  if number.length == 1 || number.length == 0
+    return true
+  elsif number[0] == number[number.length - 1]
+    isPalindrome?(number[1..number.length - 2 ])
+  else
+    return false
+  end
+end
+
+puts isPalindrome?(9009)
 
