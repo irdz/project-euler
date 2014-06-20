@@ -27,5 +27,14 @@ def isPalindrome?(number)
   end
 end
 
-puts isPalindrome?(9009)
 
+number = largestPalindromeNumber(3)
+
+while product > currentPalindrome
+
+  if isPalindrome?(product)
+    currentPalindrome = product
+  else
+    product = product * (product - 1)
+  end
+end
