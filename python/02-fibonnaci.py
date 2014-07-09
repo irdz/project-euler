@@ -8,14 +8,18 @@ def fibonnacci(index):
   if index <= 1:
     return index
   else:
-    fibonnacci(index - 1) + fibonnacci(index - 2)
+    return fibonnacci(index - 1) + fibonnacci(index - 2)
 
 num = 0
-sum = 0
+sumTotal = 0
 
 while num < 4000000:
-  if fibonnacci(num) % 2 == 0:
-    sum += fibonnacci(num)
-  num += 1
+  # We don't want to run fib twice, so let's save it
+  currentFibonnacciAnswer = fibonnacci(num)
 
-print sum
+  if currentFibonnacciAnswer % 2 == 0:
+    sumTotal += currentFibonnacciAnswer
+  # num += 1
+  num = currentFibonnacciAnswer
+
+print sumTotal
