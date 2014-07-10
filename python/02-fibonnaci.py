@@ -12,14 +12,14 @@ def fibonnacci(index):
 
 num = 0
 sumTotal = 0
+currentFibonnacciAnswer = 0
 
-while num < 4000000:
+while currentFibonnacciAnswer < 4000000:
   # We don't want to run fib twice, so let's save it
   currentFibonnacciAnswer = fibonnacci(num)
 
   if currentFibonnacciAnswer % 2 == 0:
     sumTotal += currentFibonnacciAnswer
-  # num += 1
-  num = currentFibonnacciAnswer
+  num += 1
 
 print sumTotal
