@@ -1,5 +1,21 @@
-.DS_Store
-.idea
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Intellij
+.idea/
 *.iml
-**/*.iml
-**/*/.idea
+*.iws
+out/
+*/*/*.idea
+java/prime-factor-1/.idea/
+java/prime-factor-1/.idea/*
+
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+target/

@@ -1,3 +1,5 @@
+
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,12 +9,26 @@ public class Main {
 
         int sum = 0;
 
-        for (int i = 0; i < 1001; i++) {
-            if (i % 3 == 0 || i % 5 == 0 ) {
-                sum += i;
-            }
-        }
+//        for (int i = 0; i < 1001; i++) {
+//            if (i % 3 == 0 || i % 5 == 0 ) {
+//                sum += i;
+//            }
+//        }
 
-        System.out.println(sum);
+//        System.out.println(sum);
+
+
+        double[] temperature = new double[7];
+
+        temperature[0] = 32.32;
+
+//        System.out.println(temperature[0]);
+
+        Name ivan = new Name();
+
+        ivan.setFirst("Ivan");
+
+        System.out.print(ivan.getFirst());
+
     }
 }
