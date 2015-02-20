@@ -11,6 +11,7 @@ out/
 */*/*.idea
 java/prime-factor-1/.idea/
 java/prime-factor-1/.idea/*.xml
+java/prime-factor-1/out/
 
 
 # Mac
