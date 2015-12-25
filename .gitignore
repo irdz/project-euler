@@ -20,3 +20,7 @@ java/prime-factor-1/out/
 # Maven
 log/
 target/
+
+
+# Java
+java/*.class
